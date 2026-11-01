@@ -1,10 +1,13 @@
+
 name: Student Tracker Checks
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   check:
@@ -12,7 +15,7 @@ jobs:
 
     steps:
       - name: Get source code
-       uses: actions/checkout@v5
+        uses: actions/checkout@v5
 
       - name: Check project files
         run: |
