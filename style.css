@@ -1,0 +1,124 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f2ff;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #cbdcf5;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2563eb;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #263c66;
+    margin-top: 35px;
+}
+
+p {
+    color: #666;
+}
+
+.form {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #b8c9df;
+    border-radius: 7px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.date-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.date-row input {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#emptyMessage {
+    padding: 20px;
+    color: #64748b;
+}
+
+#emptyMessage h3 {
+    color: #334155;
+}
+
+li {
+    list-style: none;
+    background-color: #f0f6ff;
+    border: 1px solid #d5e4ff;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 7px;
+    text-align: left;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: green;
+}
+
+.complete-btn {
+    background-color: #16a34a;
+    margin-left: 10px;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .date-row {
+        flex-direction: column;
+    }
+
+    .date-row input,
+    .date-row button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
