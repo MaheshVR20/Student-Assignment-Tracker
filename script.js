@@ -54,5 +54,5 @@ function addTask() {
 
     taskInput.value = "";
     deadlineInput.value = "";
-
+console.log("Student Assignment Tracker loaded successfully");
 }
